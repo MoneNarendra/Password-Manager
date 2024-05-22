@@ -48,7 +48,6 @@ class PassManagerApp extends Component {
 
   submitForm = event => {
     event.preventDefault()
-
     const {website, name, password} = this.state
     const profileColor = this.getProfileColor()
     const newItem = {id: uuidv4(), website, name, password, profileColor}
@@ -75,122 +74,122 @@ class PassManagerApp extends Component {
     )
 
     return (
-      <div className="bg-container">
-        <div className="inner-container">
+      <div className='bg-container'>
+        <div className='inner-container'>
           <img
-            src="https://assets.ccbp.in/frontend/react-js/password-manager-logo-img.png"
-            alt="app logo"
-            className="app-logo"
+            src='https://assets.ccbp.in/frontend/react-js/password-manager-logo-img.png'
+            alt='app logo'
+            className='app-logo'
           />
-          <div className="top-container">
-            <form className="form-container" onSubmit={this.submitForm}>
-              <h1 className="form-heading">Add New Password</h1>
-              <div className="input-contianer">
-                <div className="input-img-con">
+          <div className='top-container'>
+            <form className='form-container' onSubmit={this.submitForm}>
+              <h1 className='form-heading'>Add New Password</h1>
+              <div className='input-contianer'>
+                <div className='input-img-con'>
                   <img
-                    src="https://assets.ccbp.in/frontend/react-js/password-manager-website-img.png"
-                    className="input-img"
-                    alt="website"
+                    src='https://assets.ccbp.in/frontend/react-js/password-manager-website-img.png'
+                    className='input-img'
+                    alt='website'
                   />
                 </div>
                 <input
-                  type="text"
-                  className="input-ele"
-                  placeholder="Enter Website"
+                  type='text'
+                  className='input-ele'
+                  placeholder='Enter Website'
                   value={website}
                   onChange={this.addWesite}
                 />
               </div>
-              <div className="input-contianer">
-                <div className="input-img-con">
+              <div className='input-contianer'>
+                <div className='input-img-con'>
                   <img
-                    src="https://assets.ccbp.in/frontend/react-js/password-manager-username-img.png"
-                    className="input-img"
-                    alt="username"
+                    src='https://assets.ccbp.in/frontend/react-js/password-manager-username-img.png'
+                    className='input-img'
+                    alt='username'
                   />
                 </div>
                 <input
-                  type="text"
-                  className="input-ele"
-                  placeholder="Enter Username"
+                  type='text'
+                  className='input-ele'
+                  placeholder='Enter Username'
                   value={name}
                   onChange={this.addName}
                 />
               </div>
-              <div className="input-contianer">
-                <div className="input-img-con">
+              <div className='input-contianer'>
+                <div className='input-img-con'>
                   <img
-                    src="https://assets.ccbp.in/frontend/react-js/password-manager-password-img.png "
-                    className="input-img"
-                    alt="password"
+                    src='https://assets.ccbp.in/frontend/react-js/password-manager-password-img.png '
+                    className='input-img'
+                    alt='password'
                   />
                 </div>
                 <input
-                  type="password"
-                  className="input-ele"
-                  placeholder="Enter Password"
+                  type='password'
+                  className='input-ele'
+                  placeholder='Enter Password'
                   value={password}
                   onChange={this.addPassword}
                 />
               </div>
-              <div className="button-con">
-                <button className="addButton" type="submit">
+              <div className='button-con'>
+                <button className='addButton' type='submit'>
                   Add
                 </button>
               </div>
             </form>
-            <div className="top-image-container">
+            <div className='top-image-container'>
               <img
-                src="https://assets.ccbp.in/frontend/react-js/password-manager-lg-img.png"
-                alt="password manager"
-                className="pass-mang-img"
+                src='https://assets.ccbp.in/frontend/react-js/password-manager-lg-img.png'
+                alt='password manager'
+                className='pass-mang-img'
               />
             </div>
           </div>
-          <div className="bottom-pass-container">
-            <div className="bottom-section-headings">
-              <div className="counting-list-items">
-                <h1 className="bottom-section-heading">Your passwords </h1>
-                <p className="list-count">{listPasswords.length}</p>
+          <div className='bottom-pass-container'>
+            <div className='bottom-section-headings'>
+              <div className='counting-list-items'>
+                <h1 className='bottom-section-heading'>Your passwords </h1>
+                <p className='list-count'>{listPasswords.length}</p>
               </div>
-              <div className="search-con">
+              <div className='search-con'>
                 <img
-                  src="https://assets.ccbp.in/frontend/react-js/password-manager-search-img.png"
-                  alt="search"
-                  className="search-img"
+                  src='https://assets.ccbp.in/frontend/react-js/password-manager-search-img.png'
+                  alt='search'
+                  className='search-img'
                 />
                 <input
-                  type="search"
-                  className="search-input"
+                  type='search'
+                  className='search-input'
                   value={userSearch}
                   onChange={this.searchingUserName}
                 />
               </div>
             </div>
-            <hr className="hr-line" />
-            <div className="check-box-con">
+            <hr className='hr-line' />
+            <div className='check-box-con'>
               <input
-                type="checkbox"
-                className="check-box-ele"
+                type='checkbox'
+                className='check-box-ele'
                 onClick={this.showPassword}
-                id="checkbox"
+                id='checkbox'
               />
-              <label className="checkbox-name" htmlFor="checkbox">
+              <label className='checkbox-name' htmlFor='checkbox'>
                 Show passwords
               </label>
             </div>
-            <div className="list-items-container">
+            <div className='list-items-container'>
               {getFilterdList.length === 0 && (
-                <div className="no-password-con">
+                <div className='no-password-con'>
                   <img
-                    src="https://assets.ccbp.in/frontend/react-js/no-passwords-img.png"
-                    alt="no passwords"
-                    className="no-pass-img"
+                    src='https://assets.ccbp.in/frontend/react-js/no-passwords-img.png'
+                    alt='no passwords'
+                    className='no-pass-img'
                   />
-                  <p className="no-password-heading">No Passwords</p>
+                  <p className='no-password-heading'>No Passwords</p>
                 </div>
               )}
-              <ul className="list-passwords-con">
+              <ul className='list-passwords-con'>
                 {getFilterdList.map(eachPass => (
                   <PasswordItem
                     key={eachPass.id}

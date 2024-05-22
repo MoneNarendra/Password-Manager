@@ -22,7 +22,7 @@ const PasswordItem = props => {
   return (
     <li className="list-item">
       <div className={`profile-con ${profileColor}`}>
-        <h1 className="profile">{website[0].toUpperCase()}</h1>
+        <h1 className="profile">{website[0]}</h1>
       </div>
       <div className="details-con">
         <p className="website">{website}</p>

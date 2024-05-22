@@ -1,0 +1,105 @@
+.list-item {
+  border: 1px solid #9ba9eb;
+  border-radius: 10px;
+  margin: 10px;
+  width: 300px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.profile-con {
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.profile {
+  font-family: 'Roboto';
+  font-size: 30px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 577px) {
+  .profile-con {
+    height: 45px;
+    width: 45px;
+  }
+  .profile {
+    font-size: 20px;
+  }
+}
+
+.details-con {
+  width: 100px;
+}
+
+.website {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.name {
+  font-family: 'Roboto';
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.password {
+  font-family: 'Roboto';
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.pass-img {
+  height: 15px;
+}
+
+.delete-button {
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  border-width: 0px;
+}
+
+.delete-icon {
+  height: 20px;
+}
+
+.profile-color-1 {
+  background-color: #94a3b8;
+}
+.profile-color-2 {
+  background-color: #b6c3ca;
+}
+.profile-color-3 {
+  background-color: #7683cb;
+}
+.profile-color-4 {
+  background-color: #f59e0b;
+}
+.profile-color-5 {
+  background-color: #10b981;
+}
+.profile-color-6 {
+  background-color: #f97316;
+}
+.profile-color-7 {
+  background-color: #14b8a6;
+}
+.profile-color-8 {
+  background-color: #b91c1c;
+}
+.profile-color-9 {
+  background-color: #0ea5e9;
+}
+.profile-color-10 {
+  background-color: #64748b;
+}
+.profile-color-11 {
+  background-color: #0b69ff;
+}
